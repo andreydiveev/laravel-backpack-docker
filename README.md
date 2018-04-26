@@ -12,16 +12,16 @@ next:
 
     docker-compose exec php bash
     cp .env.example .env
-    ./artisan key:generate
+    php artisan key:generate
 
 At this step bare webapp is ready:
 http://localhost:8000/
 
 Setting up backpack:
 
-    ./artisan migrate
-    ./artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSeeder"
-    ./artisan db:seed
+    php artisan migrate
+    php artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSeeder"
+    php artisan db:seed
 
 Open http://localhost:8000/admin
 

@@ -16,10 +16,14 @@ next:
 
 At this step bare webapp is ready:
 http://localhost:8000/
-http://localhost:8000/admin/login
 
 Setting up backpack:
 
     ./artisan migrate
     ./artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSeeder"
     ./artisan db:seed
+
+Open http://localhost:8000/admin
+
+Done.
+

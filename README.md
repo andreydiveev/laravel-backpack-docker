@@ -24,8 +24,9 @@ next:
 
     docker-compose exec php bash
     cp .env.example .env
-    php artisan key:generate
     chown -R www-data: storage/
+    php artisan key:generate
+    php artisan migrate
 
 At this step bare webapp is ready:
 

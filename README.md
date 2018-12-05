@@ -27,6 +27,7 @@ next:
     chown -R www-data: storage/
     php artisan key:generate
     php artisan migrate
+    exit
 
 At this step bare webapp is ready:
 

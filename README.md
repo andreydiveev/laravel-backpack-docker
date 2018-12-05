@@ -27,7 +27,7 @@ next:
     php artisan key:generate
 
 At this step bare webapp is ready:
-http://localhost:8000/
+http://localhost/
 
 Setting up backpack:
 
@@ -35,7 +35,7 @@ Setting up backpack:
     php artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSeeder"
     php artisan db:seed
 
-Open http://localhost:8000/admin
+Open http://localhost/admin
 
 Done.
 

@@ -4,13 +4,13 @@ Install docker:
 
     curl https://releases.rancher.com/install-docker/17.12.sh | sh
 
-Installing Docker Compose
+Install docker-ompose:
 
     curl -L --fail https://github.com/docker/compose/releases/download/1.12.0/run.sh > /usr/local/bin/docker-compose
     chmod +x /usr/local/bin/docker-compose
     docker-compose --version
 
-Install app
+Install app:
 
     git clone https://github.com/andreydiveev/laravel-backpack-docker
     cd laravel-backpack-docker

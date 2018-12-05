@@ -25,17 +25,13 @@ next:
     docker-compose exec php bash
     cp .env.example .env
     php artisan key:generate
+    chown -R www-data: storage/
 
 At this step bare webapp is ready:
-http://localhost/
 
-Setting up backpack:
+Laravel http://localhost/
 
-    php artisan migrate
-    php artisan db:seed --class="Backpack\Settings\database\seeds\SettingsTableSeeder"
-    php artisan db:seed
-
-Open http://localhost/admin
+Backpack http://localhost/admin
 
 Done.
 
